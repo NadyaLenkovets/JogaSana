@@ -1,0 +1,597 @@
+<!DOCTYPE.html>
+   <html lang="ru">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>JogaSana - студия йоги в Гомеле</title>
+
+      <!-- favicon
+	================================================== -->
+
+      <link rel="shortcut icon" href="favicon.png">
+
+      <!-- fonts
+   ================================================== -->
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Prata&display=swap" rel="stylesheet">
+
+      <!-- js, css
+   ================================================== -->
+
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/slick.min.js"></script>
+
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+
+   <body>
+
+      <!-- svg-спрайт -->
+
+      <svg style="display: none;">
+
+         <symbol id="instagram" viewBox="0 0 511 511.9">
+            <g>
+               <path
+                  d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0" />
+               <path
+                  d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0" />
+               <path
+                  d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0" />
+            </g>
+         </symbol>
+
+         <symbol id="vk" viewBox="0 0 24 24">
+            <g>
+               <path
+                  d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+            </g>
+         </symbol>
+
+         <symbol id="facebook" viewBox="0 0 24 24">
+            <g>
+               <path
+                  d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+            </g>
+         </symbol>
+
+         <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+               <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"/>
+            </g>
+         </symbol>
+
+         <symbol id="youtube" viewBox="0 -71 511.99912 511">
+            <g>
+               <path d="m255.980469 370.492188c-.042969 0-.089844 0-.136719 0-15.449219-.105469-152.027344-1.351563-190.722656-11.816407-27.042969-7.269531-48.390625-28.59375-55.679688-55.640625-10.125-38.011718-9.4804685-111.195312-9.410156-117.039062-.0664062-5.816406-.71875-79.605469 9.378906-117.929688.011719-.035156.019532-.074218.03125-.109375 7.207032-26.738281 29.035156-48.722656 55.613282-56.011719.066406-.019531.136718-.035156.203124-.054687 38.257813-10.054687 175.105469-11.285156 190.585938-11.390625h.277344c15.488281.105469 152.429687 1.351562 190.769531 11.832031 26.972656 7.25 48.304687 28.546875 55.613281 55.558594 10.503906 38.351563 9.53125 112.300781 9.425782 118.542969.074218 6.148437.6875 78.675781-9.378907 116.878906-.007812.039062-.019531.074219-.027343.109375-7.292969 27.046875-28.636719 48.371094-55.710938 55.648437-.035156.011719-.074219.019532-.109375.03125-38.253906 10.050782-175.105469 11.28125-190.582031 11.390626-.046875 0-.09375 0-.140625 0zm-207.90625-292.167969c-8.890625 33.828125-8.050781 106.675781-8.042969 107.410156v.527344c-.265625 20.203125.667969 78.710937 8.046875 106.421875 3.578125 13.269531 14.105469 23.78125 27.457031 27.371094 28.550782 7.722656 139.789063 10.152343 180.445313 10.4375 40.761719-.285157 152.164062-2.648438 180.503906-10.0625 13.308594-3.601563 23.800781-14.078126 27.402344-27.363282 7.386719-28.117187 8.3125-86.339844 8.042969-106.414062 0-.210938 0-.421875.003906-.632813.367187-20.445312-.355469-79.636719-8.011719-107.570312-.007813-.027344-.015625-.054688-.019531-.082031-3.59375-13.328126-14.125-23.839844-27.476563-27.429688-28.273437-7.730469-139.691406-10.152344-180.445312-10.4375-40.734375.285156-152.027344 2.644531-180.453125 10.050781-13.097656 3.632813-23.863282 14.519531-27.453125 27.773438zm435.136719 219.894531h.011718zm-278.210938-31.726562v-161.996094l140 81zm0 0"/>
+            </g>
+         </symbol>
+      </svg>
+   
+         <header class="header" id="header">
+            <div class="header-inner">
+               <div class="logo">
+                  <a href="#intro" class="header__logo"><img src="img/header/logo.png" alt=""></a>
+               </div>
+               <nav class="header-menu" id="header-menu">
+                  <a href="#intro" class="header-menu__link">Главная</a>
+                  <a href="#about" class="header-menu__link">О нас</a>
+                  <a href="#schedule" class="header-menu__link">Расписание</a>
+                  <a href="#testimonials" class="header-menu__link">Отзывы</a>
+                  <a href="#team" class="header-menu__link">Команда</a>
+                  <a href="#contacts" class="header-menu__link">Контакты</a>
+               </nav>
+               <div class="header-button">
+                  <a href="#schedule" class="header__btn btn">Записаться</a>
+               </div>
+               <div class="header__burger" id="header__burger">
+                  <span></span>
+               </div>
+            </div>   
+         </header>
+         
+
+         <section class="intro" id="intro">
+            <div class="intro-slider" id="intro-slider">
+               <div class="intro__item intro__item1">
+                  <picture>
+                     <source media="(max-width: 767px)" srcset="img/intro/5.jpg">
+                     <img src="img/intro/1.jpg">
+                  </picture>
+
+                  <div class="intro__content intro__content1">
+                     <h4 class="subtitle subtitle-intro">Добро пожаловать в студию йоги</h4>
+                     <h1 class="intro__title intro__title1">Искусство двигаться красиво</h1>
+                     <div class="intro__buttons">
+                        <a href="#schedule" class="intro__btn btn">Расписание</a>
+                        <a href="" class="intro__btn btn btn-turquoise">Подробнее</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="intro__item intro__item2">
+                  <img src="img/intro/2.jpg" alt="">
+                  <div class="intro__content intro__content3">
+                     <h4 class="subtitle subtitle-intro">Специально для студентов</h4>
+                     <h2 class="intro__title intro__title3">Скидка <span>30%</span> на первый месяц занятий</h2>
+                     <div class="intro__buttons">
+                        <a href="" class="intro__btn btn">Подробнее</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="intro__item intro__item3">
+                  <img src="img/intro/3.jpg" alt="">
+                  <div class="intro__content intro__content2">
+                     <h2 class="intro__title intro__title2">Разнообразные события и мастерклассы</h2>
+                     <div class="intro__buttons">
+                        <a href="#events" class="intro__btn btn">Подробнее</a>
+                        <a href="#app" class="intro__btn btn btn-turquoise">Наше приложение</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         
+         <main>
+            <section class="about" id="about">
+                  <div class="about-inner">
+                     <div class="about__item about__item1">
+                        <h3 class="about__title">Для новичков</h3>
+                        <p class="about__text">Занятие для тех, кто никогда не занимался, но хочет попробовать.
+                           Группа не является постоянной и проходит по записи.</p>
+                        <a href="" class="btn btn-about">Подробнее</a>   
+                     </div>
+
+                     <div class="about__item about__item2">
+                        <h3 class="about__title">В нашей студии</h3>
+                        <p class="about__text">YogaSana - это светлое пространство общей площадью более 150 квадратных метров: 2 оборудованных зала для практики, раздевалки с душевыми, уютная зона отдыха.</p>
+                        <a href="" class="btn btn-about">Подробнее</a>   
+                     </div>
+
+                     <div class="about__item about__item3">
+                        <h3 class="about__title">Наши занятия</h3>
+                        <p class="about__text">Залы оборудованы всем необходимым для практики йоги: качественными йога-ковриками, одеялами, болстерами, кирпичами, специальными ремнями. Остается только расстелить коврик.</p>
+                        <a href="" class="btn btn-about">Подробнее</a>   
+                     </div>
+
+                     <div class="about__item about__item4">
+                        <h3 class="about__title">Ближайшие события</h3>
+                        <p class="about__text">Мы существуем для того, чтобы развивать йогу в городе, который любим. Поэтому регулярно проводим семинары и мастерклассы с известными преподавателями.</p>
+                        <a href="" class="btn btn-about">Подробнее</a>   
+                     </div>
+                  </div>
+            </section>
+
+            <section class="schedule" id="schedule">
+               <div class="container">
+                  <div class="schedule-inner">
+                     <h4 class="schedule__subtitle subtitle">Записаться на занятие</h4>
+                     <h2 class="schedule__title title">Сегодня у нас проходят занятия</h2>
+                     <p class="schedule__date">Расписание на <span><script language="javascript" type="text/javascript">
+                        let d = new Date();
+                        
+                        let month = new Array("января","февраля","марта","апреля","мая","июня",
+                        "июля","августа","сентября","октября","ноября","декабря");
+                        
+                        document.write(d.getDate()+ " " + month[d.getMonth()]
+                        + " " + d.getFullYear());
+                        </script></span></p>
+
+                     <div class="schedule-table">
+                        <div class="table__row">
+                           <div class="table__item table__item-date">
+                              <script language="javascript" type="text/javascript"><!--
+                                 
+                                 let day = new Array("Воскресенье","Понедельник","Вторник",
+                                 "Среда","Четверг","Пятница","Суббота");
+                                 
+                                 document.write(day[d.getDay()]);
+                                 //--></script>
+                           </div>
+                           <div class="table__item table__item-class">
+                              Класс
+                           </div>
+                           <div class="table__item table__item-instructor">
+                              Инструктор
+                           </div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__item table__item-sign">
+                              <p class="table__item-time">9:15 - 10:15</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                           <div class="table__item table__item-type">
+                              Хатха йога
+                           </div>
+                           <div class="table__item table__item-name">
+                              Виктория Осина
+                           </div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__item table__item-sign">
+                              <p class="table__item-time">9:30 - 10:30</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                           <div class="table__item table__item-type">
+                              Женская йога
+                           </div>
+                           <div class="table__item table__item-name">
+                              Марина Вовченко
+                           </div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__item table__item-sign">
+                              <p class="table__item-time">9:30 - 10:30</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                           <div class="table__item table__item-type">
+                              Пилатес
+                           </div>
+                           <div class="table__item table__item-name">
+                              Алексей Михайлов
+                           </div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__item table__item-sign">
+                              <p class="table__item-time">10:45 - 12:00</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                           <div class="table__item table__item-type">
+                              Йога-нидра
+                           </div>
+                           <div class="table__item table__item-name">
+                              Тимур Каштанов
+                           </div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__item table__item-sign">
+                              <p class="table__item-time">12:30 - 13:30</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                           <div class="table__item table__item-type">
+                              Хатха йога
+                           </div>
+                           <div class="table__item table__item-name">
+                              Виктория Осина
+                           </div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__item table__item-sign">
+                              <p class="table__item-time">13:00 - 14:00</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                           <div class="table__item table__item-type">
+                              Женская йога
+                           </div>
+                           <div class="table__item table__item-name">
+                              Марина Вовченко
+                           </div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__item table__item-sign">
+                              <p class="table__item-time">16:30 - 17:30</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                           <div class="table__item table__item-type">
+                              Пилатес
+                           </div>
+                           <div class="table__item table__item-name">
+                              Алексей Михайлов
+                           </div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__item table__item-sign">
+                              <p class="table__item-time">18:00 - 19:15</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                           <div class="table__item table__item-type">
+                              Йога-нидра
+                           </div>
+                           <div class="table__item table__item-name">
+                              Тимур Каштанов
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="testimonials" id="testimonials">
+               <div class="container">
+                  <div class="testimonials-inner">
+                     <h4 class="testimonials__subtitle subtitle subtitle-white">Отзывы</h4>
+                     <h2 class="testimonials__title title title-white">Что говорят наши посетители</h2>
+                     <div class="testimonials-slider" id="testimonials-slider">
+                        <div class="testimonials-slider__item">
+                           <p class="testimonials__text">"Если хотите поддерживать и обретать хорошую физическую, эмоциональную, психологическую форму,тогда вам сюда! Профессиональные преподаватели! Личный подход к каждому!"</p>
+                           <div class="testimonials__student">
+                              <div class="author__photo">
+                                 <img src="img/testimonials/yoga-pose.svg" height="30px" alt="">
+                              </div>
+                              <div class="author__info">
+                                 <p class="author__name">Евгения Стрельцова</p>
+                                 <p class="author__city">г.Могилев</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="testimonials-slider__item">
+                           <p class="testimonials__text">"Йога мне помогла нейтрализовать остеохондроз крестцового отдела позвоночника, научила управлять эмоциями и повысила жизненный тонус. Очень советую эту студию."</p>
+                           <div class="testimonials__student">
+                              <div class="author__photo">
+                                 <img src="img/testimonials/yoga-pose.svg" height="30px" alt="">
+                              </div>
+                              <div class="author__info">
+                                 <p class="author__name">Михаил Иванов</p>
+                                 <p class="author__city">г.Минск</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="testimonials-slider__item">
+                           <p class="testimonials__text">"Хожу уже 2 года! Очень хороший инструктор и человек Виктория,она вкладывает душу в каждое занятие! Занятие длится 1,5 часа,а потом мы дружно пьем вкусный чай и общаемся. Рекомендую Всем!"</p>
+                           <div class="testimonials__student">
+                              <div class="author__photo">
+                                 <img src="img/testimonials/yoga-pose.svg" height="30px" alt="">
+                              </div>
+                              <div class="author__info">
+                                 <p class="author__name">Ольга Попова</p>
+                                 <p class="author__city">г.Минск</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="testimonials-slider__item">
+                           <p class="testimonials__text">"Тем, кому нужен заряд энергии, крепкие суставы и позвоночник. Занятия проводит сертифицированный инструктор по йоге с медицинским и психологическим образованием."</p>
+                           <div class="testimonials__student">
+                              <div class="author__photo">
+                                 <img src="img/testimonials/yoga-pose.svg" height="30px" alt="">
+                              </div>
+                              <div class="author__info">
+                                 <p class="author__name">Стас Михайлов</p>
+                                 <p class="author__city">г.Москва</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="" class="btn btn-gray">Еще отзывы</a>
+                  </div>
+               </div>
+            </section>
+
+            <section class="team" id="team">
+               <div class="container">
+                  <div class="team-inner">
+                     <h4 class="team__subtitle subtitle">Инструкторы</h4>
+                     <h2 class="team__title title">Познакомьтесь с нашей командой</h2>
+                     <div class="team__row">
+                        <div class="team__item">
+                           <div class="team__card">
+                              <div class="team__image">
+                                 <img src="img/team/01.jpg" alt="">
+                              </div>
+                              <div class="team__content">
+                                 <p class="team__name">Виктория Осина</p>
+                                 <p class="team__position">Основатель студии, инструктор хатха-йоги</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="team__item">
+                           <div class="team__card">
+                              <div class="team__image">
+                                 <img src="img/team/02.jpg" alt="">
+                              </div>
+                              <div class="team__content">
+                                 <p class="team__name">Алексей Михайлов</p>
+                                 <p class="team__position">Инструктор по пилатесу</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="team__item">
+                           <div class="team__card">
+                              <div class="team__image">
+                                 <img src="img/team/03.jpg" alt="">
+                              </div>
+                              <div class="team__content">
+                                 <p class="team__name">Марина Вовченко</p>
+                                 <p class="team__position">Инструктор по женской йоге</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="team__item">
+                           <div class="team__card">
+                              <div class="team__image">
+                                 <img src="img/team/04.jpg" alt="">
+                              </div>
+                              <div class="team__content">
+                                 <p class="team__name">Тимур Каштанов</p>
+                                 <p class="team__position">Инструктор йога-нидра</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="app" id="app">
+               <div class="container">
+                  <div class="app-inner">
+                     <div class="app__image">
+                        <img src="img/app/phone.jpg" alt="">
+                     </div>
+                     <div class="app__content">
+                        <h2 class="app__title title">Скачайте наше приложение</h2>
+                        <p class="app__text">Находите и бронируйте занятия по йоге из любого места через наше мобильное приложение.</p>
+                        <div class="app__icons">
+                           <a href=""><img class="app__gp" src="img/app/01.png" alt=""></a>
+                           <a href=""><img class="app__as" src="img/app/02.png" alt=""></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section class="events" id="events">
+               <div class="container">
+                  <div class="events-inner">
+                     <h4 class="events__subtitle subtitle subtitle-white">События и мастерклассы</h4>
+                     <h2 class="events__title title title-white">Предстоящие события</h2>
+                     <div class="events__content">
+                        <div class="events__card">
+                           <div class="events__img">
+                              <img src="img/events/02.jpg" alt="">
+                           </div>
+                           <h3 class="events__title">Приветствуя солнце</h3>
+                           <p class="events__date">20 Июня, 2021 <span>12:00 - 17:00</span></p>
+                           <p class="events__address">Набережная реки Сож в парке Румянцевых-Паскевичей</p>
+                           <div class="events__footer">
+                              <p class="events__price">20 BYN</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                        </div>
+
+                        <div class="events__card">
+                           <div class="events__img">
+                              <img src="img/events/03.jpg" alt="">
+                           </div>
+                           <h3 class="events__title">Искусство пробуждения</h3>
+                           <p class="events__date">11 Июля, 2021 <span>09:00 - 12:00</span></p>
+                           <p class="events__address">Набережная реки Сож в парке Румянцевых-Паскевичей</p>
+                           <div class="events__footer">
+                              <p class="events__price">30 BYN</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                        </div>
+
+                        <div class="events__card">
+                           <div class="events__img">
+                              <img src="img/events/02.jpg" alt="">
+                           </div>
+                           <h3 class="events__title">Техники расслабления</h3>
+                           <p class="events__date">14 Июля, 2021 <span>09:00 - 10:30</span></p>
+                           <p class="events__address">Студия YogaSana</p>
+                           <div class="events__footer">
+                              <p class="events__price">10 BYN</p>
+                              <a href="" class="btn btn-turquoise-sm">Запись</a>
+                           </div>
+                        </div>
+                     </div>
+                     <a href="" class="btn btn-gray">Еще события</a>
+                  </div>
+               </div>
+            </section>
+
+            <section class="contacts" id="contacts">
+               <div class="container">
+                  <div class="contacts-inner">
+                     <div class="contacts__connection">
+                        <h4 class="contacts__subtitle subtitle subtitle-white">Появились вопросы?</h4>
+                        <h2 class="contacts__title title title-white">Напишите нам</h2>
+                        <div class="contacts-container">
+                           <p class="contacts__text">Не стесняйтесь присылать нам любые вопросы, которые у вас возникли. Мы с радостью ответим на них.</p>
+                           <div class="contacts__form">
+                              <div class="form__item">
+                                 <label for="formName" class="form__label">Ваше имя (обязательно):</label>
+                                 <input class="form__input" id="formName" type="text" name="name">
+                              </div>
+                              <div class="form__item">
+                                 <label for="formEmail" class="form__label">Ваш Email (обязательно):</label>
+                                 <input class="form__input" id="formEmail" type="text" name="email">
+                              </div>
+                              <div class="form__item">
+                                 <label for="formMessage" class="form__label">Сообщение:</label>
+                                 <textarea class="form__textarea" rows="7" id="formMessage" type="text" name="message"></textarea>
+                              </div>
+                           </div>
+                           <a href="" class="btn btn-contacts">Отправить</a>
+                        </div>
+                     </div>
+                     <div class="contacts__info">
+                        <div class="contacts__info-column">
+                           <div class="contacts__subtitle1">
+                              <img src="img/contacts/place.svg"  alt="">
+                              <p>Почтовый адрес</p>
+                           </div>
+                           <div class="contacts__text-big">246000 г. Гомель, ул. Центральная 11.</div>
+                           <div class="contacts__subtitle1">
+                              <img src="img/contacts/phone.svg"  alt="">
+                              <p>Номер телефона</p>
+                           </div>
+                           <div class="contacts__text-big">+375 44 777 88 99</div>
+                        </div>
+                        <div class="contacts__info-column">
+                           <div class="contacts__subtitle1">
+                              <img src="img/contacts/at.svg"  alt="">
+                              <p>Email</p>
+                           </div>
+                           <div class="contacts__text-big">info@jogasana.by</div>
+                           <div class="contacts__subtitle1">
+                              <img src="img/contacts/clock.svg"  alt="">
+                              <p>Время работы</p>
+                           </div>
+                           <div class="contacts__text-big">Понедельник - суббота 8:00 - 21:00</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+         
+
+         <footer class="footer">
+            <div class="container">
+               <div class="footer-inner">
+                  <div class="footer__logo">
+                    <a href="#intro"><img src="img/footer/logo.png" alt=""></a> 
+                  </div>
+                  <div class="footer__social">
+                     <div class="footer__social-item">
+                        <svg class="social-icon">
+                           <use xlink:href="#instagram"></use>
+                        </svg>
+                     </div>
+                     <div class="footer__social-item">
+                        <svg class="social-icon">
+                           <use xlink:href="#facebook"></use>
+                        </svg>
+                     </div>
+                     <div class="footer__social-item">
+                        <svg class="social-icon">
+                           <use xlink:href="#vk"></use>
+                        </svg>
+                     </div>
+                     <div class="footer__social-item">
+                        <svg class="social-icon">
+                           <use xlink:href="#twitter"></use>
+                        </svg>
+                     </div>
+                     <div class="footer__social-item">
+                        <svg class="social-icon">
+                           <use xlink:href="#youtube"></use>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer__copyright">
+                  Copyright © 2021 Jogasana. All Rights Reserved.
+               </div>
+            </div>
+         </footer>
+
+         
+     
+
+
+      <script src="js/script.js"></script>
+   </body>
+
+   </html>
